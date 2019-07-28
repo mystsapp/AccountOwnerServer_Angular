@@ -23,3 +23,15 @@
 2019-07-28 15:59:10.5651 INFO Returned all owners from database.
 2019-07-28 15:59:16.6473 INFO Returned owner with id: 5499e68a-0fdd-49cc-b35d-1599d81e11d0
 2019-07-28 15:59:25.0679 INFO Returned all owners from database.
+2019-07-28 16:36:15.5353 INFO Returned all owners from database.
+2019-07-28 16:36:56.4003 INFO Returned all owners from database.
+2019-07-28 16:39:19.2724 INFO Returned all owners from database.
+2019-07-28 16:39:42.4472 INFO Returned all owners from database.
+2019-07-28 16:39:45.2766 INFO Returned owner with details for id: 75f84562-e093-4289-91b6-ecae97d73a65
+2019-07-28 17:08:27.5821 INFO Returned owner with details for id: 75f84562-e093-4289-91b6-ecae97d73a65
+2019-07-28 17:08:29.9624 INFO Returned owner with details for id: 75f84562-e093-4289-91b6-ecae97d73a65
+2019-07-28 17:08:40.4573 INFO Returned all owners from database.
+2019-07-28 17:08:42.2916 INFO Returned owner with id: 75f84562-e093-4289-91b6-ecae97d73a65
+2019-07-28 17:08:46.1145 INFO Returned all owners from database.
+2019-07-28 17:08:47.3378 INFO Returned owner with id: 75f84562-e093-4289-91b6-ecae97d73a65
+2019-07-28 17:08:51.8935 INFO Returned all owners from database.
