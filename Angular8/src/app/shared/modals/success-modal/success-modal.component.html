@@ -1,0 +1,20 @@
+<div class="modal fade" id="successModal" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal" (click)="emmitEvent()">&times;</button>
+                <h4 class="modal-title">{{modalHeaderText}}</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>{{modalBodyText}}</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success" type="button" data-dismiss="modal"
+                    (click)="emmitEvent()">{{okButtonText}}</button>
+            </div>
+        </div>
+    </div>
+</div>

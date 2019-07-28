@@ -1,0 +1,11 @@
+2019-07-27 11:05:41.8983 INFO Returned all owners from database.
+2019-07-27 11:31:26.6740 INFO Returned all owners from database.
+2019-07-27 11:48:19.0358 INFO Returned all owners from database.
+2019-07-27 11:49:09.9985 INFO Returned all owners from database.
+2019-07-27 11:49:57.9096 INFO Returned all owners from database.
+2019-07-27 11:50:12.3138 INFO Returned all owners from database.
+2019-07-27 11:50:18.1493 INFO Returned all owners from database.
+2019-07-27 11:57:38.6234 INFO Returned all owners from database.
+2019-07-27 11:57:42.9414 INFO Returned all owners from database.
+2019-07-27 11:57:52.1385 INFO Returned all owners from database.
+2019-07-27 11:58:12.7659 INFO Returned all owners from database.
