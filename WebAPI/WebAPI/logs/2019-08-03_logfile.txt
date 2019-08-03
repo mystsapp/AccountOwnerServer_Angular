@@ -1,0 +1,16 @@
+2019-08-03 12:42:34.0400 INFO Returned all owners from database.
+2019-08-03 12:42:41.6481 INFO Returned owner with details for id: 99d9376e-fd90-444f-a755-aa8ffd485e56
+2019-08-03 12:42:44.6296 INFO Returned all owners from database.
+2019-08-03 12:42:46.8162 INFO Returned owner with id: 99d9376e-fd90-444f-a755-aa8ffd485e56
+2019-08-03 12:42:52.0420 INFO Returned all owners from database.
+2019-08-03 12:47:18.6407 INFO Returned all owners from database.
+2019-08-03 12:47:21.6910 INFO Returned owner with id: 99d9376e-fd90-444f-a755-aa8ffd485e56
+2019-08-03 12:48:12.6623 INFO Returned all owners from database.
+2019-08-03 12:48:20.5091 INFO Returned owner with id: 99d9376e-fd90-444f-a755-aa8ffd485e56
+2019-08-03 12:48:31.0508 INFO Returned all owners from database.
+2019-08-03 12:48:41.0748 INFO Returned owner with id: c2b86891-77cc-4f51-8454-b21a321061c9
+2019-08-03 12:48:44.4084 INFO Returned all owners from database.
+2019-08-03 12:48:50.1325 INFO Returned owner with id: 99d9376e-fd90-444f-a755-aa8ffd485e56
+2019-08-03 12:48:51.3385 INFO Returned all owners from database.
+2019-08-03 12:48:53.2002 INFO Returned owner with id: 99d9376e-fd90-444f-a755-aa8ffd485e56
+2019-08-03 12:48:55.9352 INFO Returned all owners from database.

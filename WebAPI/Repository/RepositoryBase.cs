@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Repository
 {
@@ -36,6 +37,11 @@ namespace Repository
         public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression)
         {
             return RepositoryContext.Set<T>().Where(expression).AsNoTracking();
+        }
+
+        public async Task SaveAsync()
+        {
+            await RepositoryContext.SaveChangesAsync();
         }
 
         public void Update(T entity)

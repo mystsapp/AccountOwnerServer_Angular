@@ -2,10 +2,12 @@
 using Entities;
 using Entities.ExtendedModels;
 using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Repository
 {
@@ -15,39 +17,50 @@ namespace Repository
         {
         }
 
-        public void CreateOwner(Owner owner)
+        public async Task CreateOwnerAsync(Owner owner)
         {
             owner.Id = Guid.NewGuid();
             Create(owner);
+            await SaveAsync();
         }
 
-        public void DeleteOwner(Owner owner)
+        public async Task DeleteOwnerAsync(Owner owner)
         {
             Delete(owner);
+            await SaveAsync();
         }
 
-        public IEnumerable<Owner> GetAllOwners()
+        public async Task<IEnumerable<Owner>> GetAllOwnersAsync()
         {
-            return FindAll().OrderBy(x => x.Name).ToList();
+            return await FindAll().OrderBy(x => x.Name).ToListAsync();
         }
 
-        public Owner GetOwnerById(Guid ownerId)
+        public async Task<Owner> GetOwnerByIdAsync(Guid ownerId)
         {
-            return FindByCondition(x => x.Id.Equals(ownerId)).DefaultIfEmpty(new Owner()).FirstOrDefault(); // avoid returning null 
+            return await FindByCondition(x => x.Id.Equals(ownerId)).DefaultIfEmpty(new Owner()).SingleAsync(); // avoid returning null 
         }
 
-        public OwnerExtended GetOwnerWithDetails(Guid ownerId)
+        public async Task<OwnerExtended> GetOwnerWithDetailsAsync(Guid ownerId)
         {
-            return new OwnerExtended(GetOwnerById(ownerId))
-            {
-                Accounts = RepositoryContext.Accounts.Where(x => x.OwnerId == ownerId)
-            };
+            return await FindByCondition(o => o.Id.Equals(ownerId))
+                .Select(owner => new OwnerExtended(owner)
+                {
+                    Accounts = RepositoryContext.Accounts
+                    .Where(a => a.OwnerId.Equals(owner.Id))
+                    .ToList()
+                })
+                .SingleOrDefaultAsync();
+            //return new OwnerExtended(await GetOwnerByIdAsync(ownerId))
+            //{
+            //    Accounts = RepositoryContext.Accounts.Where(x => x.OwnerId == ownerId)
+            //};
         }
 
-        public void UpdateOwner(Owner dbOwner, Owner owner)
+        public async Task UpdateOwnerAsync(Owner dbOwner, Owner owner)
         {
             dbOwner.Map(owner);
             Update(dbOwner);
+            await SaveAsync();
         }
     }
 }
